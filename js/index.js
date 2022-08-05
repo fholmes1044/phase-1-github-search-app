@@ -1,25 +1,7 @@
 
 const div = document.getElementById("github-container")
-const getButton =  document.getElementById('github-form')
+const gitForm =  document.getElementById("github-form")
 const input = document.getElementById("search");
-
-// //document.addEventListener("DOMContentLoaded", () => {
-// searchButton()
-// })
-
-
-function searchButton(){
-   
-    //.log(getButton)
-    getButton.addEventListener("submit", findValues)
-}
-function addResult(results){
-    
-    let newParagraph = document.createElement("p")
-    results = input[0].value
-    Div.appendChild(results)
-
-}
 
 function findValues (event){
     console.log("hi", "hi")
@@ -44,5 +26,16 @@ function findValues (event){
     //     //resp.message.forEach (key => addResults)
     //})
     }
+console.log(gitForm)
+    gitForm.addEventListener("submit", findValues)
+
+function addResult(results){
+    
+    let newParagraph = document.createElement("p")
+    results = input[0].value
+    Div.appendChild(results)
+
+}
+
 
 searchButton()
