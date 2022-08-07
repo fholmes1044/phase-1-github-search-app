@@ -67,9 +67,12 @@ function fetchRepositories() {
       console.log("response2", resp);
       let div2 = document.createElement("div")
       button.appendChild(div2)
+      resp.forEach(element =>{
       let p1 = document.createElement("p")
-      p1.innerText = resp;
+      p1.innerText = element.name;
       li.appendChild(p1)
+    })
+      
       
 
     });
